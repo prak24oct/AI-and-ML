@@ -128,23 +128,10 @@ see you
 
 ---
 
-### **7. Comments**
-Comments are used to explain code and are ignored by the Python interpreter.
-- **Single-line comments**: Start with `#`.
-- **Multi-line comments**: Enclosed in triple quotes (`""" ... """` or `''' ... '''`).
-
-#### **Code Examples:**
-```python
-# This is a single-line comment
-"""
-This is a
-multi-line comment
-"""
-```
 
 ---
 
-### **8. Libraries**
+### **7. Libraries**
 Python libraries provide reusable code for various functionalities, similar to `#include` in C.
 
 #### **Code Example:**
