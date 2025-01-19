@@ -208,7 +208,7 @@ These notes cover the essential concepts, examples, and methods related to strin
 
 
 
- Here is the completed explanation and filled-in assertions:
+### Here is the completed explanation and filled-in assertions:
 
 ---
 
