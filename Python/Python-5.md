@@ -263,10 +263,11 @@ print(fruits)
 
 ---
 
-These notes provide a comprehensive guide to **Python Lists**, covering all concepts and examples in detail. Let me know if you'd like further clarifications!
+These notes provide a comprehensive guide to **Python Lists**, covering all concepts and examples in detail.
 
 
 ---
+### Here is the updated and complete document with all the requested examples for list methods:
 ```python
 import string
 
