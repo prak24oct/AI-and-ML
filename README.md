@@ -10,8 +10,8 @@ Project Classes : DSAIML ->  \
 0 / 31
 
 
-Total -  9 / 172 \
-Left - 164
+Total -  11 / 172 \
+Left - 162
 
 ---
 
