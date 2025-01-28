@@ -1,7 +1,7 @@
 # AI-and-ML-Notes
 
 August 2022 Batch : DSAIML ->   \
-9 / 19
+13 / 19
 
 Stats ML November Batch 2022 ->  \
 0 / 123 
@@ -10,8 +10,8 @@ Project Classes : DSAIML ->  \
 0 / 31
 
 
-Total -  11 / 172 \
-Left - 162
+Total -  13 / 172 \
+Left - 160
 
 ---
 
