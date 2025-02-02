@@ -1,17 +1,17 @@
 # AI-and-ML-Notes
 
 August 2022 Batch : DSAIML ->   \
-13 / 19
+19 / 19
 
 Stats ML November Batch 2022 ->  \
-0 / 123 
+1 / 123 
 
 Project Classes : DSAIML ->  \
 0 / 31
 
 
-Total -  13 / 173 \
-Left - 160
+Total -  20 / 173 \
+Left - 153
 
 ---
 
@@ -32,4 +32,4 @@ Weeks Required - 82 Weeks \
 82/4 = 20 Months \
 20/12 = 1 years 9 months 
 
-
+---
