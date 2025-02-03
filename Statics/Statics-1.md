@@ -89,9 +89,9 @@ Understanding data types is crucial in choosing the right statistical method.
 
 ## **8️⃣ Measures of Central Tendency**  
 ### **✔ Mean (Average)**  
-\[
-\text{Mean} = \frac{\text{Sum of all values}}{\text{Total number of values}}
-\]
+$$
+Mean = \frac{\text{Sum of all values}}{\text{Total number of values}}
+$$
 - **Example:** Exam scores **80, 85, 90, 95, 100**  
   - Mean = **90**  
 - **🔺 Affected by extreme values (outliers).**  
@@ -117,10 +117,10 @@ Understanding data types is crucial in choosing the right statistical method.
 - **Example:** Exam scores **50, 60, 70, 80, 90, 100** → **Range = 100 - 50 = 50**  
 
 ### **✔ Interquartile Range (IQR)**  
-- Measures the middle 50% of the data:  
-\[
-\text{IQR} = Q3 - Q1
-\]
+- Measures the middle 50% of the data:
+`
+IQR = Q3 - Q1
+`
 - **Example:** If Q3 = 75 and Q1 = 25 → **IQR = 50**  
 
 ### **✔ Variance**  
