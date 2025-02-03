@@ -118,18 +118,18 @@ Understanding data types is crucial in choosing the right statistical method.
 
 ### **✔ Interquartile Range (IQR)**  
 - Measures the middle 50% of the data:  
-  \[
-  \text{IQR} = Q3 - Q1
-  \]
+\[
+\text{IQR} = Q3 - Q1
+\]
 - **Example:** If Q3 = 75 and Q1 = 25 → **IQR = 50**  
 
 ### **✔ Variance**  
 - Measures how much values deviate from the mean.  
 
 ### **✔ Standard Deviation**  
-\[
-\text{SD} = \sqrt{\frac{\sum (x - \bar{x})^2}{n-1}}
-\]
+$$
+SD = \sqrt{\frac{\sum (x - \bar{x})^2}{n-1}}
+$$
 - **Example:** Low SD = Data close to the mean, High SD = Data widely spread.  
 - 🔹 **Why use n-1 in sample SD calculation?**  
   - It reduces bias when estimating population variance from a sample.  
