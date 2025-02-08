@@ -1,3 +1,151 @@
+# **📌 Python Examples for Probability & Distributions**
+
+## **1️⃣ Basic Probability Calculation**
+Let’s calculate the probability of rolling a **4** on a fair **six-sided die**.
+
+```python
+# Probability of rolling a 4 on a six-sided die
+total_outcomes = 6  # 1,2,3,4,5,6
+favorable_outcomes = 1  # Only one outcome is 4
+
+probability = favorable_outcomes / total_outcomes
+print(f"Probability of rolling a 4: {probability:.2f}")  # Output: 0.17 (1/6)
+```
+
+---
+
+## **2️⃣ Probability of Independent Events**
+If we toss a **coin twice**, what is the probability of getting **two heads**?
+
+```python
+# Independent event: Coin toss
+P_head = 0.5  # Probability of getting heads
+
+# Probability of two heads in two tosses
+P_two_heads = P_head * P_head
+print(f"Probability of getting two heads: {P_two_heads:.2f}")  # Output: 0.25 (1/4)
+```
+
+---
+
+## **3️⃣ Probability of Dependent Events**
+Let’s say we have **a bag with 5 red and 5 blue balls**. If we draw **two balls without replacement**, what is the probability that both are red?
+
+```python
+# Dependent events: Drawing two red balls
+red_balls = 5
+total_balls = 10
+
+P_first_red = red_balls / total_balls  # First draw
+P_second_red = (red_balls - 1) / (total_balls - 1)  # Second draw
+
+P_both_red = P_first_red * P_second_red
+print(f"Probability of drawing two red balls: {P_both_red:.2f}")  # Output: 0.22
+```
+
+---
+
+## **4️⃣ Permutations & Combinations**
+Let’s calculate:
+- **Permutations**: Selecting 3 players from 5 for **Captain, Vice-Captain, and Treasurer**.
+- **Combinations**: Selecting 3 players from 5 **without position**.
+
+```python
+from math import factorial
+
+# Permutation: Order matters
+n, r = 5, 3
+permutation = factorial(n) / factorial(n - r)
+print(f"Permutation (5P3): {int(permutation)}")  # Output: 60
+
+# Combination: Order doesn't matter
+combination = factorial(n) / (factorial(r) * factorial(n - r))
+print(f"Combination (5C3): {int(combination)}")  # Output: 10
+```
+
+---
+
+## **5️⃣ Binomial Distribution (Coin Toss Example)**
+If you **flip a coin 4 times**, what is the probability of getting **exactly 2 heads**?
+
+```python
+from math import comb
+
+# Binomial probability formula: P(X = k) = C(n, k) * (p^k) * ((1-p)^(n-k))
+n, k = 4, 2  # 4 tosses, 2 heads
+p = 0.5  # Probability of heads
+
+P_x_equals_k = comb(n, k) * (p ** k) * ((1 - p) ** (n - k))
+print(f"Probability of getting exactly 2 heads in 4 tosses: {P_x_equals_k:.3f}")  # Output: 0.375
+```
+
+---
+
+## **6️⃣ Simulating Probability Distributions (Rolling a Die)**
+Let’s **simulate rolling a fair die 10,000 times** and find the probability of rolling a **6**.
+
+```python
+import numpy as np
+
+# Simulate rolling a die 10,000 times
+rolls = np.random.randint(1, 7, 10000)  # Random numbers from 1 to 6
+P_six = np.sum(rolls == 6) / len(rolls)
+
+print(f"Experimental Probability of rolling a 6: {P_six:.2f}")  # Should be close to 1/6 ≈ 0.17
+```
+
+---
+
+## **7️⃣ Visualizing a Probability Distribution**
+Let’s **plot the probability distribution** for rolling a die.
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Count occurrences of each die roll
+outcomes, counts = np.unique(rolls, return_counts=True)
+
+# Normalize counts to get probability
+probabilities = counts / len(rolls)
+
+# Plot
+sns.barplot(x=outcomes, y=probabilities, palette="Blues")
+plt.xlabel("Die Face")
+plt.ylabel("Probability")
+plt.title("Probability Distribution of Rolling a Die")
+plt.show()
+```
+
+---
+
+## **8️⃣ Real-World AI/ML Example: Predicting Customer Churn**
+A company wants to predict **customer churn** using a **binomial distribution**. If **10% of customers** leave each month, what is the probability that **exactly 3 out of 20** customers will churn?
+
+```python
+n, k = 20, 3  # 20 customers, 3 churning
+p = 0.1  # 10% probability of churn
+
+P_churn_3 = comb(n, k) * (p ** k) * ((1 - p) ** (n - k))
+print(f"Probability of exactly 3 customers churning: {P_churn_3:.3f}")  # Output: 0.19
+```
+
+---
+
+# **🔑 Key Takeaways**
+✅ **Basic probability** helps us predict outcomes in games, AI, and real life.  
+✅ **Independent & dependent events** affect probability calculations.  
+✅ **Permutations & combinations** are useful in counting problems.  
+✅ **Binomial distribution** is used in AI models for classification problems.  
+✅ **Simulation & visualization** help validate theoretical probabilities.  
+
+---
+
+### **🚀 Next Steps**
+Would you like to see **more advanced ML applications** using probability? Let me know! 😊
+
+---
+
 # Python Functions: Generating Random Numbers and Simulating Probability
 
 ## 1. Introduction to Random Number Generation

@@ -1,3 +1,117 @@
+
+# **📌 Python Examples for Probability Distributions**
+Let’s implement **Poisson Distribution**, **Normal Distribution**, and **Z-Score Calculations** step by step.
+
+---
+
+## **🎯 1️⃣ Poisson Distribution (Rare Events Prediction)**
+
+### **📌 Example 1: Predicting Visitors to a Booking Counter**
+📍 **Scenario**: On average, **3.6 people** visit a booking counter every **10 minutes**. What’s the probability that **7 people** visit in the next 10 minutes?
+
+#### **✅ Python Implementation:**
+```python
+from scipy.stats import poisson
+
+# Given data
+u = 3.6  # Average arrivals (mean)
+x = 7  # Actual arrivals 
+
+# Poisson probability
+P_x = poisson.pmf(x, u)
+print(f"Probability of exactly 7 people arriving: {P_x:.4f}")  # Output: ~0.0424 (4.24%)
+```
+
+---
+
+### **📌 Example 2: Simulating Poisson Events**
+📍 **Scenario**: Simulate **1,000 days** of email arrivals, where an average of **5 emails** arrive per hour.
+
+```python
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate Poisson-distributed data
+emails_per_hour = np.random.poisson(5, 1000)
+
+# Plot histogram
+plt.hist(emails_per_hour, bins=range(15), color='skyblue', edgecolor='black', alpha=0.7)
+plt.xlabel("Number of Emails")
+plt.ylabel("Frequency")
+plt.title("Poisson Distribution of Email Arrivals per Hour")
+plt.show()
+```
+
+🎯 **Takeaway**: Poisson Distribution **models rare events** like customer arrivals, accidents, or machine failures.
+
+---
+
+## **🔥 2️⃣ Normal Distribution (Gaussian Curve)**
+
+### **📌 Example 3: Visualizing Normal Distribution**
+📍 **Scenario**: Generate **100,000 random values** from a normal distribution with **mean = 70** and **std dev = 10**.
+
+```python
+import scipy.stats as stats
+
+# Generate normal distribution data
+mu, sigma = 70, 10  # Mean and standard deviation
+data = np.random.normal(mu, sigma, 100000)
+
+# Plot histogram
+sns.histplot(data, bins=50, kde=True, color="purple")
+plt.axvline(mu, color='red', linestyle='dashed', linewidth=2)  # Mean line
+plt.xlabel("Test Scores")
+plt.ylabel("Frequency")
+plt.title("Normal Distribution of Test Scores")
+plt.show()
+```
+
+🎯 **Takeaway**: Normal Distribution models **heights, IQ scores, exam results, stock prices**, etc.
+
+---
+
+## **📌 3️⃣ Z-Score Calculation (Probability of Above/Below a Value)**
+
+### **📌 Example 4: Finding Z-Score & Probability**
+📍 **Scenario**: A university’s test scores have **mean = 70** and **std dev = 5**. What percentage of students scored **above 80**?
+
+#### **✅ Python Calculation**
+```python
+from scipy.stats import norm
+
+# Given data
+X = 80  # Test score
+mu, sigma = 70, 5  # Mean and standard deviation
+
+# Calculate Z-score
+Z = (X - mu) / sigma
+
+# Find probability of scoring above 80
+P_above_80 = 1 - norm.cdf(Z)
+print(f"Probability of scoring above 80: {P_above_80:.4f}")  # Output: ~0.0228 (2.28%)
+```
+
+🎯 **Takeaway**: The **Z-score** tells us how far a value is from the mean and helps estimate probabilities.
+
+---
+
+## **📝 4️⃣ Practice Questions**
+💡 **Poisson Distribution**
+1️⃣ A small café receives an average of **5 orders per minute**. What’s the probability of receiving **8 orders in the next minute**?
+
+💡 **Normal Distribution**
+2️⃣ A factory produces bolts with **mean length = 10cm** and **σ = 0.5cm**. What percentage of bolts are **longer than 11cm**?
+
+---
+
+## **🚀 5️⃣ Summary & Key Takeaways**
+✔ **Poisson Distribution** predicts rare events over a fixed interval.  
+✔ **Normal Distribution** is used for continuous data like heights and scores.  
+✔ **Z-score** helps compare different distributions and calculate probabilities.  
+
+🔍 Want **more ML applications** using probability? Let me know! 🚀
+---
 ## Python Functions: Poisson and Normal Distributions
 
 ### Introduction to Probability Distributions
