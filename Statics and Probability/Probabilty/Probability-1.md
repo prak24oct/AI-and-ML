@@ -38,21 +38,21 @@ $P(4) = \frac{1}{6}$
 
 ## **4️⃣ Probability Rules**
 📌 **Addition Rule (OR Probability)**
-$
-P(A \cup B) = P(A) + P(B) - P(A \cap B)
-$
+
+$P(A \cup B) = P(A) + P(B) - P(A \cap B)$
+
 Used when we want to find the probability of **either event A or event B happening**.
 
 📌 **Multiplication Rule (AND Probability)**
-$
-P(A \cap B) = P(A) \times P(B|A)
-$
+
+$P(A \cap B) = P(A) \times P(B|A)$
+
 Used when we want to find the probability of **both A and B happening**.
 
 📌 **Complement Rule**
-$
-P(A') = 1 - P(A)
-$
+
+$P(A') = 1 - P(A)$
+
 The probability of an event NOT happening.
 
 📌 **Example Questions**:
@@ -75,15 +75,15 @@ The probability of an event NOT happening.
 
 ## **6️⃣ Permutations & Combinations**
 📌 **Permutation (Order Matters)**:
-$
-nP_r = \frac{n!}{(n - r)!}
-$
+
+$nP_r = \frac{n!}{(n - r)!}$
+
 Example: Selecting **3 employees** for **President, VP, and Manager**.
 
 📌 **Combination (Order Doesn’t Matter)**:
-$
-nC_r = \frac{n!}{(r! \times (n - r)!)}
-$
+
+$nC_r = \frac{n!}{(r! \times (n - r)!)}$
+
 Example: Selecting **3 players** from a **team of 5**.
 
 🚀 **Real-World Use Case**: AI models use permutations for **password cracking algorithms** and combinations for **recommender systems**.
@@ -101,9 +101,8 @@ A **probability distribution** describes how values are spread out in a dataset.
 - The probability of getting a **fixed number of successes** in a set number of trials.
 - **Example:** Tossing a **coin 4 times**, what is the probability of getting **exactly 2 heads**?
 
-$
-P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}
-$
+$P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}$
+
 
 Where:
 - \( n \) = number of trials
