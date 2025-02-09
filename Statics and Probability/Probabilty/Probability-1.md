@@ -15,11 +15,9 @@ Probability measures how likely an event is to occur, calculated as:
 
 $P(A) = \frac{\text{Number of favorable outcomes}}{\text{Total number of outcomes}}$
 
-📌 **Example:** 
+📌 **Example:**
 Rolling a **fair die** and getting a 4:
-$
-P(4) = \frac{1}{6}
-$
+$P(4) = \frac{1}{6}$
 
 ---
 
